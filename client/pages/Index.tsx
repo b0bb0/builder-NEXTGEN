@@ -165,13 +165,9 @@ export default function Index() {
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center mb-6">
             <img
-              src="https://cdnb.artstation.com/p/assets/images/images/011/397/637/original/outpost-zero-outpostzero-piratedrone.gif?1529391818"
+              src="https://cdn.builder.io/api/v1/image/assets%2Ff5d907221eae42f8ad7af5c6352e7073%2Fceba535afa33439aa4f842df1ad83372?format=webp&width=800"
               alt="AI Security Drone Mascot"
               className="w-16 h-16 mr-4 animate-float"
-              style={{
-                mixBlendMode: "screen",
-                filter: "contrast(1.2) brightness(1.1)",
-              }}
             />
             <Badge className="bg-neon-purple/20 text-neon-purple border-neon-purple/30 hover:bg-neon-purple/30">
               <Zap className="w-3 h-3 mr-1" />
