@@ -170,7 +170,7 @@ export default function Index() {
               className="w-24 h-24 mr-4 animate-float"
               style={{
                 filter:
-                  "drop-shadow(0 0 20px rgba(255, 102, 204, 0.8)) drop-shadow(0 0 40px rgba(255, 102, 204, 0.4))",
+                  "drop-shadow(0 0 15px rgba(255, 102, 204, 1)) drop-shadow(0 0 30px rgba(255, 102, 204, 0.8)) drop-shadow(0 0 60px rgba(255, 102, 204, 0.6)) drop-shadow(0 0 90px rgba(255, 102, 204, 0.4))",
               }}
             />
             <Badge className="bg-neon-purple/20 text-neon-purple border-neon-purple/30 hover:bg-neon-purple/30">
