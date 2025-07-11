@@ -59,7 +59,7 @@ export default function Index() {
       </div>
 
       {/* Navigation */}
-      <nav className="relative z-10 p-6">
+      <nav className="relative z-10 p-4 md:p-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-r from-neon-purple to-neon-cyan rounded-lg flex items-center justify-center">
@@ -69,6 +69,8 @@ export default function Index() {
               CyberGuard AI
             </span>
           </div>
+
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#features"
@@ -98,7 +100,61 @@ export default function Index() {
               Get Started
             </Button>
           </div>
+
+          {/* Mobile Menu Button */}
+          <Button
+            variant="ghost"
+            size="sm"
+            className="md:hidden text-foreground"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </Button>
         </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-neon-purple/30 p-4">
+            <div className="flex flex-col space-y-4">
+              <a
+                href="#features"
+                className="text-foreground/80 hover:text-neon-cyan transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Features
+              </a>
+              <a
+                href="#security"
+                className="text-foreground/80 hover:text-neon-cyan transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Security
+              </a>
+              <a
+                href="#pricing"
+                className="text-foreground/80 hover:text-neon-cyan transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Pricing
+              </a>
+              <div className="flex flex-col space-y-3 pt-4 border-t border-neon-purple/30">
+                <Button
+                  variant="outline"
+                  className="border-neon-purple/50 text-neon-purple hover:bg-neon-purple/10"
+                >
+                  Sign In
+                </Button>
+                <Button className="bg-gradient-to-r from-neon-purple to-neon-cyan hover:from-neon-purple/80 hover:to-neon-cyan/80">
+                  Get Started
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
