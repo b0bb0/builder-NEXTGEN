@@ -177,6 +177,16 @@ export default function Index() {
               <Zap className="w-3 h-3 mr-1" />
               Next-Gen AI Security
             </Badge>
+            <img
+              src="https://cdn.builder.io/o/assets%2Ff5d907221eae42f8ad7af5c6352e7073%2Fd91ace39ae6445dd97433280da6126b0?alt=media&token=c6620f3c-baac-40d7-b605-f59b19b2d216&apiKey=f5d907221eae42f8ad7af5c6352e7073"
+              alt="Additional Security Element"
+              className="w-20 h-20 ml-4 animate-float"
+              style={{
+                animationDelay: "1.5s",
+                filter:
+                  "drop-shadow(0 0 10px rgba(0, 255, 255, 0.8)) drop-shadow(0 0 20px rgba(0, 255, 255, 0.4))",
+              }}
+            />
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
