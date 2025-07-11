@@ -184,36 +184,46 @@ export default function Index() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-neon-purple to-neon-cyan hover:from-neon-purple/80 hover:to-neon-cyan/80 text-lg px-8 py-6"
+              className="bg-gradient-to-r from-neon-purple to-neon-cyan hover:from-neon-purple/80 hover:to-neon-cyan/80 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
             >
               Start Free Scan
-              <ChevronRight className="w-5 h-5 ml-2" />
+              <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-neon-cyan/50 text-neon-cyan hover:bg-neon-cyan/10 text-lg px-8 py-6"
+              className="border-neon-cyan/50 text-neon-cyan hover:bg-neon-cyan/10 text-base sm:text-lg px-6 sm:px-8 py-4 sm:py-6"
             >
-              <Eye className="w-5 h-5 mr-2" />
+              <Eye className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Watch Demo
             </Button>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-neon-cyan mb-2">10M+</div>
-              <div className="text-foreground/60">Vulnerabilities Detected</div>
+              <div className="text-2xl sm:text-3xl font-bold text-neon-cyan mb-2">
+                10M+
+              </div>
+              <div className="text-sm sm:text-base text-foreground/60">
+                Vulnerabilities Detected
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-neon-purple mb-2">
+              <div className="text-2xl sm:text-3xl font-bold text-neon-purple mb-2">
                 99.9%
               </div>
-              <div className="text-foreground/60">Accuracy Rate</div>
+              <div className="text-sm sm:text-base text-foreground/60">
+                Accuracy Rate
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-neon-pink mb-2">24/7</div>
-              <div className="text-foreground/60">Real-time Monitoring</div>
+              <div className="text-2xl sm:text-3xl font-bold text-neon-pink mb-2">
+                24/7
+              </div>
+              <div className="text-sm sm:text-base text-foreground/60">
+                Real-time Monitoring
+              </div>
             </div>
           </div>
         </div>
