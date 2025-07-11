@@ -163,10 +163,17 @@ export default function Index() {
       {/* Hero Section */}
       <section className="relative z-10 px-6 py-20">
         <div className="max-w-7xl mx-auto text-center">
-          <Badge className="mb-6 bg-neon-purple/20 text-neon-purple border-neon-purple/30 hover:bg-neon-purple/30">
-            <Zap className="w-3 h-3 mr-1" />
-            Next-Gen AI Security
-          </Badge>
+          <div className="flex items-center justify-center mb-6">
+            <img
+              src="https://cdnb.artstation.com/p/assets/images/images/011/397/637/original/outpost-zero-outpostzero-piratedrone.gif?1529391818"
+              alt="AI Security Drone Mascot"
+              className="w-16 h-16 mr-4 animate-float"
+            />
+            <Badge className="bg-neon-purple/20 text-neon-purple border-neon-purple/30 hover:bg-neon-purple/30">
+              <Zap className="w-3 h-3 mr-1" />
+              Next-Gen AI Security
+            </Badge>
+          </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="bg-gradient-to-r from-white via-neon-cyan to-neon-purple bg-clip-text text-transparent">
