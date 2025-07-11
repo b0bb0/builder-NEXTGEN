@@ -13,6 +13,8 @@ import {
   Star,
   Users,
   Activity,
+  Menu,
+  X,
 } from "lucide-react";
 
 export default function Index() {
