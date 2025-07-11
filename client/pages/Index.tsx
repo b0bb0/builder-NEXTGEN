@@ -354,11 +354,21 @@ export default function Index() {
             ].map((feature, index) => (
               <Card
                 key={index}
-                className={`bg-card/50 backdrop-blur-sm border-${feature.color}/30 hover:border-${feature.color}/60 transition-all duration-300 group`}
+                className="bg-card/50 backdrop-blur-sm border-neon-purple/30 hover:border-neon-purple/60 transition-all duration-300 group"
               >
                 <CardContent className="p-6">
                   <div
-                    className={`w-12 h-12 bg-gradient-to-r from-${feature.color} to-${feature.color}/80 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+                    className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 ${
+                      feature.color === "neon-purple"
+                        ? "bg-gradient-to-r from-neon-purple to-neon-purple/80"
+                        : feature.color === "neon-cyan"
+                          ? "bg-gradient-to-r from-neon-cyan to-neon-cyan/80"
+                          : feature.color === "neon-pink"
+                            ? "bg-gradient-to-r from-neon-pink to-neon-pink/80"
+                            : feature.color === "neon-orange"
+                              ? "bg-gradient-to-r from-neon-orange to-neon-orange/80"
+                              : "bg-gradient-to-r from-neon-yellow to-neon-yellow/80"
+                    }`}
                   >
                     <feature.icon className="w-6 h-6 text-white" />
                   </div>
