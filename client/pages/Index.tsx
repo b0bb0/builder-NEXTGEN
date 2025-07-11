@@ -165,7 +165,7 @@ export default function Index() {
             Next-Gen AI Security
           </Badge>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="bg-gradient-to-r from-white via-neon-cyan to-neon-purple bg-clip-text text-transparent">
               Web3 AI Vulnerability
             </span>
@@ -175,7 +175,7 @@ export default function Index() {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 max-w-3xl mx-auto leading-relaxed">
             Harness the power of artificial intelligence to identify, analyze,
             and mitigate security vulnerabilities in your Web3 infrastructure
             before they become threats.
