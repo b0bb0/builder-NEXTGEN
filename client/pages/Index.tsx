@@ -168,6 +168,10 @@ export default function Index() {
               src="https://cdnb.artstation.com/p/assets/images/images/011/397/637/original/outpost-zero-outpostzero-piratedrone.gif?1529391818"
               alt="AI Security Drone Mascot"
               className="w-16 h-16 mr-4 animate-float"
+              style={{
+                mixBlendMode: "screen",
+                filter: "contrast(1.2) brightness(1.1)",
+              }}
             />
             <Badge className="bg-neon-purple/20 text-neon-purple border-neon-purple/30 hover:bg-neon-purple/30">
               <Zap className="w-3 h-3 mr-1" />
