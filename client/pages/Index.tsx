@@ -167,7 +167,11 @@ export default function Index() {
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2Ff5d907221eae42f8ad7af5c6352e7073%2Fceba535afa33439aa4f842df1ad83372?format=webp&width=800"
               alt="AI Security Drone Mascot"
-              className="w-16 h-16 mr-4 animate-float"
+              className="w-24 h-24 mr-4 animate-float"
+              style={{
+                filter:
+                  "drop-shadow(0 0 20px rgba(255, 102, 204, 0.8)) drop-shadow(0 0 40px rgba(255, 102, 204, 0.4))",
+              }}
             />
             <Badge className="bg-neon-purple/20 text-neon-purple border-neon-purple/30 hover:bg-neon-purple/30">
               <Zap className="w-3 h-3 mr-1" />
