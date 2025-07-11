@@ -94,8 +94,9 @@ export default function Index() {
             <Button
               variant="outline"
               className="border-neon-purple/50 text-neon-purple hover:bg-neon-purple/10"
+              asChild
             >
-              Sign In
+              <Link to="/login">Sign In</Link>
             </Button>
             <Button className="bg-gradient-to-r from-neon-purple to-neon-cyan hover:from-neon-purple/80 hover:to-neon-cyan/80">
               Get Started
